@@ -15,4 +15,9 @@ Rails.application.routes.draw do
       post 'like'
     end
   end
+
+
+  resources :chefs, except: [:new]
+
+  get '/register' => 'chefs#new'
 end
