@@ -19,5 +19,5 @@ Rails.application.routes.draw do
 
   resources :chefs, except: [:new]
 
-  get '/register' => 'chefs#new'
+  get '/register' => 'chefs#new', :as => 'signup'
 end
